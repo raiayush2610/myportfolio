@@ -227,7 +227,7 @@
 	// 		$.ajax({      	
 
 	// 	      type: "POST",
-	// 	    //   url: "inc/sendEmail.php",
+	// 	      url: "inc/sendEmail.php",
 	// 	      data: $(form).serialize(),
 	// 	      beforeSend: function() { 
 
@@ -235,10 +235,12 @@
 
 	// 	      },
 	// 	      success: function(msg) {
+	// 			  console.log(msg);
 
 	//             // Message was sent
 	//             if (msg == 'OK') {
-	//             	sLoader.fadeOut(); 
+	//             	sLoader.fadeOut();
+
 	//                $('#message-warning').hide();
 	//                $('#contactForm').fadeOut();
 	//                $('#message-success').fadeIn();   
@@ -254,7 +256,7 @@
 	// 	      error: function() {
 
 	// 	      	sLoader.fadeOut(); 
-	// 	      	$('#message-warning').html("Something went wrong. Please try again.");
+	// 	      	$('#message-warning').html("Sofmething went wrong. Please try again.");
 	// 	         $('#message-warning').fadeIn();
 
 	// 	      }
