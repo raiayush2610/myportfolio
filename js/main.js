@@ -217,54 +217,38 @@
 	------------------------------------------------------ */
 
 	/* local validation */
-	// $('#contactForm').validate({
+	$('#contactForm').validate({
 
-	// 	/* submit via ajax */
-	// 	submitHandler: function(form) {
+		/* submit via ajax */
+		submitHandler: function() {
 
-	// 		var sLoader = $('#submit-loader');
+			var sLoader = $('#submit-loader');
+			var name = $('.from_name').val();
+			var email = $('.from_email').val();
+			var message = $('.message').val();
+			console.log(name, " ", email, " ", message);
+			(function(){
+				emailjs.init("rJYZZxi4grPfAfonp");
+				var templateParams = {
+					from_name: name,
+					from_email: email,
+					message: message,
+				};
+				 
+				emailjs.send('service_hlxti4m', 'ayush_rai2610', templateParams)
+					.then(function(response) {
+					   console.log('SUCCESS!', response.status, response.text);
+					}, function(error) {
+					   console.log('FAILED...', error);
+					});
+				console.log(emailjs)
+			 })();
+			console.log("hello");
 
-	// 		$.ajax({      	
+			    		
+  		}
 
-	// 	      type: "POST",
-	// 	      url: "inc/sendEmail.php",
-	// 	      data: $(form).serialize(),
-	// 	      beforeSend: function() { 
-
-	// 	      	sLoader.fadeIn(); 
-
-	// 	      },
-	// 	      success: function(msg) {
-	// 			  console.log(msg);
-
-	//             // Message was sent
-	//             if (msg == 'OK') {
-	//             	sLoader.fadeOut();
-
-	//                $('#message-warning').hide();
-	//                $('#contactForm').fadeOut();
-	//                $('#message-success').fadeIn();   
-	//             }
-	//             // There was an error
-	//             else {
-	//             	sLoader.fadeOut(); 
-	//                $('#message-warning').html(msg);
-	// 	            $('#message-warning').fadeIn();
-	//             }
-
-	// 	      },
-	// 	      error: function() {
-
-	// 	      	sLoader.fadeOut(); 
-	// 	      	$('#message-warning').html("Sofmething went wrong. Please try again.");
-	// 	         $('#message-warning').fadeIn();
-
-	// 	      }
-
-	//       });     		
-  	// 	}
-
-	// });
+	});
 
 
  	/*----------------------------------------------------- */
