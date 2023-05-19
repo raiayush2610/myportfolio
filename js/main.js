@@ -18,7 +18,7 @@
     	$("#loader").fadeOut("slow", function(){
 
         // will fade out the whole DIV that covers the website.
-        $("#preloader").delay(300).fadeOut("slow");
+        $("#preloader").delay(100).fadeOut("fast");
 
       });       
 
@@ -32,7 +32,7 @@
 
    	$('#intro h1').fitText(1, { minFontSize: '42px', maxFontSize: '84px' });
 
-  	}, 100);
+  	}, 1000);
 
 
 	/*---------------------------------------------------- */
@@ -80,7 +80,7 @@
 				   var $this = $(this);
 
 				   $({ Counter: 0 }).animate({ Counter: $this.text() }, {
-				   	duration: 4000,
+				   	duration: 3000,
 				   	easing: 'swing',
 				   	step: function (curValue) {
 				      	$this.text(Math.ceil(curValue));
