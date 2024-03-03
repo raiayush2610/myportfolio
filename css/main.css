@@ -1564,7 +1564,9 @@ header .logo a {
 	margin-right: 4rem;
 }
 .button-section .lor{
-	margin-left: 5rem ;
+	margin-left: 4rem ;
+	background-color: white;
+	border: 3px solid #313131;
 }
 /* .lor{
 	margin-left: 5rem !important;
@@ -1609,6 +1611,8 @@ header .logo a {
 	}
 	.button-section .lor{
 		margin-left: 0rem ;
+
+		
 	}
 	
 }
