@@ -235,15 +235,17 @@
 					message: message,
 				};
 				 
-				emailjs.send('service_hlxti4m', 'rai.ayush2610@gmail.com', templateParams)
+				emailjs.send('service_hlxti4m', 'ayush_rai2610', templateParams)
 					.then(function(response) {
 					   console.log('SUCCESS!', response.status, response.text);
 					   var emailError= document.querySelector('#email-error');
 						emailError.innerHTML = 'SUCCESS';
 						// Change the color to red
 						emailError.style.color = 'green';
-					   $('#email-error').innerHTML = 'SUCCESS!';
+					   $('#email-error').innerHTML = 'Email Sent Succeufully';
 					}, function(error) {
+						console.log(error);
+						
 						var emailError= document.querySelector('#email-error');
 						emailError.innerHTML = 'FAILED...';
 						// Change the color to red
