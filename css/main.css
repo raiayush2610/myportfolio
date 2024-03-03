@@ -2427,7 +2427,12 @@ header .logo a {
 .contact-info h5 {
 	color: #FF0077;
 }
-
+#email-error{
+	margin-left:290px ;
+	margin-bottom: 10px;
+	align-items: center;
+	
+}
 /**
  * loader animation - (_layout.scss)
  * --------------------------------------------------------------- 
@@ -2557,7 +2562,12 @@ footer .copyright span:last-child::after {
 	footer .copyright span::after {
 		display: none;
 	}
+	#email-error{
+		margin-left:150px ;		
+	}
 }
+
+
 
 /**
  * go to top - (_layout.scss)
