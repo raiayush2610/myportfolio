@@ -239,15 +239,15 @@
 					.then(function(response) {
 					   console.log('SUCCESS!', response.status, response.text);
 					   var emailError= document.querySelector('#email-error');
-						emailError.innerHTML = 'SUCCESS';
+						emailError.innerHTML = 'Email Sent Succesfully';
 						// Change the color to red
 						emailError.style.color = 'green';
-					   $('#email-error').innerHTML = 'Email Sent Succesfully';
+					//    $('#email-error').innerHTML = 'Email Sent Succesfully';
 					}, function(error) {
 						console.log(error);
 						
 						var emailError= document.querySelector('#email-error');
-						emailError.innerHTML = 'FAILED...';
+						emailError.innerHTML = 'FAILED to Sent'
 						// Change the color to red
 						emailError.style.color = 'red';
 					   

@@ -1025,6 +1025,14 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 .grey-section p.lead {
 	color: #7d7d7d;
 }
+
+.black-section{
+	background: #d7ed9b;
+ }
+ .black-section p.lead {
+	color: rgb(43, 94, 93);
+}
+
 .section-intro {
 	max-width: 700px;
 	margin-left: auto;
@@ -1640,7 +1648,13 @@ header .logo a {
  *
  * ------------------------------------------------------------------- 
  */
-#resume {
+/** 
+ * ===================================================================
+ * 12. resume - (_layout.scss)
+ *
+ * ------------------------------------------------------------------- 
+ */
+ #resume {
 	padding-top: 12rem;
 	padding-bottom: 12rem;
 }
@@ -1692,6 +1706,9 @@ header .logo a {
 	left: .05rem;
 	top: .2rem;
 }
+#resume .timeline-ico >a{
+	color: white;
+}
 
 #resume .timeline-header {
 	float: left;
@@ -1705,7 +1722,7 @@ header .logo a {
 #resume .timeline-header p {
 	font-family: "poppins-regular", sans-serif;
 	font-size: 1.6rem;
-	color: #888888;
+	color: #1a0202;
 }
 #resume .timeline-content {
 	margin-left: 35%;
@@ -1799,9 +1816,6 @@ header .logo a {
 	}
 	#resume .timeline-header, #resume .timeline-content {
 		padding-left: 5.5rem;
-	}
-	#lor{
-		margin-left: -5px;
 	}
 }
 
