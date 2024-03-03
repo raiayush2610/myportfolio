@@ -1,7 +1,7 @@
 /**
  * =================================================================== 
  *
- *  Kards v1.0 Main Stylesheet
+ *  Ayush v1.0 Main Stylesheet
  *  url: styleshout.com
  *  03-01-2016
  *  ------------------------------------------------------------------
@@ -1094,7 +1094,7 @@ header .row {
 	min-height: 66px;
 }
 header .top-bar {
-	display: block;
+	display: contents;
 	background: #000000;
 	min-width: 220px;
 	min-height: 66px;
@@ -1116,10 +1116,11 @@ header .logo a {
 	border: none;
 	font: 0/0 a;
 	text-shadow: none;
-	color: transparent;
+	
 	width: 92px;
-	height: 15px;
-	background: url("../images/logo.png") no-repeat center;
+	height: 25px;
+
+	background: url("../images/logo2.png") no-repeat center;
 	background-size: 92px 15px;
 }
 
