@@ -242,7 +242,7 @@
 						emailError.innerHTML = 'SUCCESS';
 						// Change the color to red
 						emailError.style.color = 'green';
-					   $('#email-error').innerHTML = 'Email Sent Succeufully';
+					   $('#email-error').innerHTML = 'Email Sent Succesfully';
 					}, function(error) {
 						console.log(error);
 						
