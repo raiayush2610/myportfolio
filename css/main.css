@@ -1027,10 +1027,10 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .black-section{
-	background: #d7ed9b;
+	background: #ece8e8;
  }
  .black-section p.lead {
-	color: rgb(43, 94, 93);
+	color: #bda5a5;
 }
 
 .section-intro {
